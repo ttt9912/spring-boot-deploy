@@ -1,0 +1,34 @@
+----------------------------------------------
+Build Pipeline
+----------------------------------------------
+
+a Build Pipeline at minimum includes:
+- Compiling
+- Tests
+- Deploy
+
+----------------------------------------------
+Trigger Build
+----------------------------------------------
+By default: push to master
+- can be configured in settings
+
+----------------------------------------------
+Travis CI
+----------------------------------------------
+The only required configuration is specifying
+the programming language
+
+1. Log in to TravisCI with GitHub
+2. create .travis.yml
+
+----------------------------------------------
+.travis.yml
+----------------------------------------------
+The only required configuration is specifying
+the programming language
+
+# Build only
+(language: java)
+- compiles sources
+- executes tests

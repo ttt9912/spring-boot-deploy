@@ -4,7 +4,6 @@ deploy springboot to heroku
 A. use heroku cli
 B. use heroku maven plugin
 C. use github
-D.
 
 ----------------------------------------------
 A. use heroku cli
@@ -30,15 +29,4 @@ C. use github
 2. create Heroku App
 3. App -> Deploy -> Connect to Github
 4. Enable Automatic Deploy
-
-----------------------------------------------
-C. use heroku ci
-----------------------------------------------
-- runs tests
-- is billed $10/month!
-
-1. create a GitHub repo
-2. create Heroku Pipeline
-3. Pipeline -> Settings -> Enable Heroku CI
-
 
