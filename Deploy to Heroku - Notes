@@ -4,7 +4,7 @@ deploy springboot to heroku
 A. use heroku cli
 B. use heroku maven plugin
 C. use github
-
+D. use github & travis ci
 ----------------------------------------------
 A. use heroku cli
 ----------------------------------------------
