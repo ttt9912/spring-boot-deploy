@@ -3,8 +3,10 @@ deploy springboot to heroku
 ----------------------------------------------
 A. use heroku cli
 B. use heroku maven plugin
-C. use github
-D. use github & travis ci
+C. use github hook
+D. use github hook & travis ci for tests
+E. deploy with travis ci
+
 ----------------------------------------------
 A. use heroku cli
 ----------------------------------------------
@@ -21,7 +23,7 @@ https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
     - $ heroku open
 
 ----------------------------------------------
-C. use github
+C. use github hook
 ----------------------------------------------
 - will deploy automatically on push
 
@@ -29,4 +31,32 @@ C. use github
 2. create Heroku App
 3. App -> Deploy -> Connect to Github
 4. Enable Automatic Deploy
+
+----------------------------------------------
+D. use github hook & travis ci for tests
+----------------------------------------------
+https://www.baeldung.com/travis-ci-build-pipeline
+
+- travis ci is only used for compiling &
+  executing tests
+
+1. create a GitHub repo
+2. create Heroku App
+3. App -> Deploy -> Connect to Github
+4. Enable Automatic Deploy
+5. Heroku -> Deploy -> wait for CI
+   - Heroku will only deploy after all the commit statuses of the
+     relevant commit show 'success'
+
+Use Travis:
+
+6. Log in to TravisCI with GitHub & add the repo
+
+7. create .travis.yml
+   - content: 'language=java'
+   - travis will compile & test on push to master
+
+----------------------------------------------
+E. deploy with travis ci
+----------------------------------------------
 
