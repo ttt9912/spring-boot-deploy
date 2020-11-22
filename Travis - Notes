@@ -1,0 +1,16 @@
+https://www.baeldung.com/travis-ci-build-pipeline
+
+----------------------------------------------
+Lifecycle
+----------------------------------------------
+https://devhints.io/travis
+
+    before_install
+    install
+    before_script
+    script
+    after_success or after_failure
+    after_script
+    before_deploy (optional)
+    deploy (optional)
+    after_deploy (optional)

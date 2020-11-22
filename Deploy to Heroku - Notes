@@ -4,7 +4,7 @@ deploy springboot to heroku
 A. use heroku cli
 B. use heroku maven plugin
 C. use github hook
-D. use github hook & travis ci for tests
+D. use github hook & travis ci for tests [used here]
 E. deploy with travis ci
 
 ----------------------------------------------
@@ -59,4 +59,11 @@ Use Travis:
 ----------------------------------------------
 E. deploy with travis ci
 ----------------------------------------------
+https://www.baeldung.com/travis-ci-build-pipeline#2-deploying-code
+
+After build, artifacts can be stored and deployed
+
+Includes
+- adding a deploy section to travis.yml
+- encryption of heroku API_KEY using travis cli
 
