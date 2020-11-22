@@ -1,9 +1,29 @@
 ----------------------------------------------
-possible options
+deploy springboot to heroku
 ----------------------------------------------
-1. use heroku cli
-2. use heroku maven plugin
-3. CI with Travis
+A. use heroku cli
+B. use heroku maven plugin
+C. use heroku ci
 
 ----------------------------------------------
+A. use heroku cli
 ----------------------------------------------
+https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
+
+1. create local git repo and commit everything
+    - create system.properties and set java version
+
+2. create a heroku app ($ heroku create)
+    - this creates and adds a git remote
+    - see remote ($ git remote -v)
+    - push & deploy ($ git push heroku master)
+    - rename heroku app ($ heroku apps:rename myname)
+    - $ heroku open
+
+----------------------------------------------
+C. use heroku ci
+----------------------------------------------
+
+1. create a GitHub repo
+
+
